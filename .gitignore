@@ -1,2 +1,3 @@
 mongo/scripts/.env
-mongo/node_modules/*
+neo4j/scripts/.env
+node_modules/*

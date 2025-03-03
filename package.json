@@ -2,16 +2,11 @@
     "name": "paperwork",
     "version": "1.0.0",
     "description": "Sistema de leilão de papel para editoras",
-    "main": "connect.js",
-    "scripts": {
-      "start": "node connect.js",
-      "populate": "node populate.js"
-    },
-    "author": "",
-    "license": "ISC",
     "dependencies": {
       "mongoose": "^7.0.0",
-      "dotenv": "^16.0.0"
+      "dotenv": "^16.0.0",
+      "neo4j-driver": "^5.7.0",
+      "uuid": "^9.0.0"
     },
     "devDependencies": {},
     "engines": {
