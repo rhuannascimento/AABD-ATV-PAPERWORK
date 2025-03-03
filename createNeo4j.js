@@ -1,8 +1,8 @@
 const neo4j = require('neo4j-driver');
-const connect = require('./connect.js');
+const connectNeo4j = require('./connectNeo4j.js');
 
-async function create() {
-  const driver = connect(); // Conectar ao Neo4j
+async function createNeo4j() {
+  const driver = connectNeo4j(); // Conectar ao Neo4j
   const session = driver.session();
 
   try {
@@ -29,4 +29,4 @@ async function create() {
   }
 }
 
-module.exports = create;
+module.exports = createNeo4j;

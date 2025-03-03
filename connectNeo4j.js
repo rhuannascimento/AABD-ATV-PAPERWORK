@@ -1,7 +1,7 @@
 const neo4j = require('neo4j-driver');
 require('dotenv').config();
 
-function connect() {
+function connectNeo4j() {
     try {
         const driver = neo4j.driver(
             process.env.NEO4J_URI,
@@ -14,4 +14,4 @@ function connect() {
     }
 }
 
-module.exports = connect;
+module.exports = connectNeo4j;

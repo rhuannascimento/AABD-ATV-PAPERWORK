@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const connect = require('./connect.js');
+const connectMongo = require('./connectMongo.js');
 
-async function create(){
+async function createMongo(){
   try {
 
-    await connect();
+    await connectMongo();
     
     // Definindo cada coleção
     const ProducerSchema = new mongoose.Schema({
@@ -76,4 +76,4 @@ async function create(){
   }
 };
 
-module.exports = create;
+module.exports = createMongo;
